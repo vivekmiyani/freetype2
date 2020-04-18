@@ -174,6 +174,8 @@
       y_shift += origin->y;
     }
 
+    FT_Outline_EmboldenXY( outline, 8, 20 );
+
     /* translate outline to render it into the bitmap */
     if ( x_shift || y_shift )
       FT_Outline_Translate( outline, x_shift, y_shift );
